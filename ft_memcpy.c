@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: kisella <kisella@student.42lehavre.fr>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/22 11:49:58 by kisella           #+#    #+#             */
-/*   Updated: 2026/10/22 17:45:48 by kisella          ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_memcpy.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/22 11:49:58 by kisella          #+#    #+#              */
+/*   Updated: 2026/10/25 13:16:13 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,12 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst);
 }
 
-int	main(void)
-{
-	char	src[] = "abc";
-	char	dst[4];
+// int	main(void)
+// {
+// 	char	src[] = "abc";
+// 	char	dst[4];
 
-	ft_memcpy(dst, src, 4);
-	printf("%s\n", dst);
-	return (0);
-}
+// 	ft_memcpy(dst, src, 4);
+// 	printf("%s\n", dst);
+// 	return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/21 15:41:49 by kisella          #+#    #+#              */
-/*   Updated: 2026/10/21 17:16:40 by kisella         ###   ########.fr        */
+/*   Updated: 2026/10/25 13:27:25 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,14 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-int	main(int argc, char **argv)
-{
-	char	*str;
+// int	main(int argc, char **argv)
+// {
+// 	char	*str;
 
-	argc = argc;
-	str = argv[1];
-	printf("Before %s\n", str);
-	ft_bzero(str, 1);
-	printf("After %s\n", str);
-	return (0);
-}
+// 	argc = argc;
+// 	str = argv[1];
+// 	printf("Before %s\n", str);
+// 	ft_bzero(str, 1);
+// 	printf("After %s\n", str);
+// 	return (0);
+// }

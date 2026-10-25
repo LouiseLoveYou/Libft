@@ -6,11 +6,11 @@
 /*   By: kisella <kisella@student.42lehavre.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 17:28:42 by kisella           #+#    #+#             */
-/*   Updated: 2026/10/22 17:52:53 by kisella          ###   ########.fr       */
+/*   Updated: 2026/10/25 17:46:31 by kisella          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -43,5 +43,4 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 int	main(void)
 {
-	return (0);
 }

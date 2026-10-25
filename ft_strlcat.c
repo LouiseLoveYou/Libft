@@ -3,27 +3,14 @@
 /*                                                       :::      ::::::::    */
 /*   ft_strlcat.c                                      :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/23 12:05:57 by username         #+#    #+#              */
-/*   Updated: 2026/10/23 12:46:13 by username        ###   ########.fr        */
+/*   Created: 2026/10/23 12:05:57 by kisella          #+#    #+#              */
+/*   Updated: 2026/10/25 17:40:32 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stddef.h>
-
-size_t	ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
@@ -50,18 +37,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (dst_len + src_len);
 }
 
-#include <stdio.h>
-#include <string.h>
+// int	main(void)
+// {
+// 	char	dst[10] = "abc";
+// 	size_t	ret;
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
-
-int	main(void)
-{
-	char	dst[10] = "abc";
-	size_t	ret;
-
-	ret = ft_strlcat(dst, "defghijklm", 10);
-	printf("retour : %zu\n", ret);
-	printf("dst    : %s\n", dst);
-	return (0);
-}
+// 	ret = ft_strlcat(dst, "defghijklm", 10);
+// 	printf("retour : %zu\n", ret);
+// 	printf("dst    : %s\n", dst);
+// 	return (0);
+// }

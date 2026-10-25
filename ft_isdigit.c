@@ -1,42 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: kisella <kisella@student.42lehavre.fr>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/19 15:04:06 by kisella           #+#    #+#             */
-/*   Updated: 2026/10/20 15:34:25 by kisella          ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_isdigit.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/19 15:04:06 by kisella          #+#    #+#              */
+/*   Updated: 2026/10/25 17:17:41 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_isdigit(char *str)
+int	ft_isdigit(int c)
 {
-	int	i;
-
-	i = 0;
-	if (str[i] == '\0')
+	if (c >= '0' && c <= '9')
 	{
-		return (1);
 	}
-	while (str[i] != '\0')
+	else
 	{
-		if (str[i] >= '0' && str[i] <= '9')
-		{
-		}
-		else
-		{
-			return (0);
-		}
-		i++;
+		return (0);
 	}
 	return (1);
 }
 
 // int	main(void)
 // {
-// 	printf("teste %d", ft_isdigit("87"));
+// 	printf("teste %d", ft_isdigit('8'));
 // 	return (0);
 // }

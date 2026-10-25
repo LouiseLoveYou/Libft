@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: kisella <kisella@student.42lehavre.fr>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/21 12:04:45 by kisella           #+#    #+#             */
-/*   Updated: 2026/10/22 12:20:52 by kisella          ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_memset.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/21 12:04:45 by kisella          #+#    #+#              */
+/*   Updated: 2026/10/25 13:16:50 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,12 @@ void	*ft_memset(void *ptr, int c, size_t n)
 	return (ptr);
 }
 
-int	main(int argc, char **argv)
-{
-	argc = argc;
-	str = argv[1];
-	printf("Before %s\n", str);
-	ft_memset(str, 88, 2);
-	printf("After %s\n", str);
-	return (0);
-}
+// int	main(int argc, char **argv)
+// {
+// 	argc = argc;
+// 	str = argv[1];
+// 	printf("Before %s\n", str);
+// 	ft_memset(str, 88, 2);
+// 	printf("After %s\n", str);
+// 	return (0);
+// }

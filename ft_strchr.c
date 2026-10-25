@@ -3,10 +3,10 @@
 /*                                                       :::      ::::::::    */
 /*   ft_strchr.c                                       :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/23 13:13:17 by username         #+#    #+#              */
-/*   Updated: 2026/10/23 14:10:15 by username        ###   ########.fr        */
+/*   Created: 2026/10/23 13:13:17 by kisella          #+#    #+#              */
+/*   Updated: 2026/10/25 13:16:08 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ char	*ft_strchr(const char *str, int c)
 	return (NULL);
 }
 
-int	main(void)
-{
-	printf("%s\n", ft_strchr("hello", 'l'));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%s\n", ft_strchr("banane", 'a'));
+// 	return (0);
+// }

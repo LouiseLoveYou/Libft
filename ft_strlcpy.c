@@ -3,10 +3,10 @@
 /*                                                       :::      ::::::::    */
 /*   ft_strlcpy.c                                      :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/23 11:44:48 by username         #+#    #+#              */
-/*   Updated: 2026/10/23 12:03:50 by username        ###   ########.fr        */
+/*   Created: 2026/10/23 11:44:48 by kisella          #+#    #+#              */
+/*   Updated: 2026/10/25 13:16:27 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (i);
 }
 
-int	main(void)
-{
-	char	dst[4];
+// int	main(void)
+// {
+// 	char	dst[4];
 
-	ft_strlcpy(dst, "Hello world", 4);
-	printf("dst = \"%s\"\n", dst);
-	return (0);
-}
+// 	ft_strlcpy(dst, "Hello world", 4);
+// 	printf("dst = \"%s\"\n", dst);
+// 	return (0);
+// }
