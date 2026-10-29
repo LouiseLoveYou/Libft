@@ -6,7 +6,7 @@
 /*   By: kisella <kisella@student.42lehavre.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/25 16:20:10 by kisella           #+#    #+#             */
-/*   Updated: 2026/10/25 17:56:22 by kisella          ###   ########.fr       */
+/*   Updated: 2026/10/29 17:02:59 by kisella          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,9 @@ int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 void	*ft_calloc(size_t count, size_t size);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+
 #endif

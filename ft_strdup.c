@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: kisella <kisella@student.42lehavre.fr>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/25 16:45:52 by kisella           #+#    #+#             */
-/*   Updated: 2026/10/25 18:01:30 by kisella          ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_strdup.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/25 16:45:52 by kisella          #+#    #+#              */
+/*   Updated: 2026/10/26 13:21:34 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,12 @@
 char	*ft_strdup(const char *s1)
 {
 	size_t	i;
+	size_t	x;
 	char	*res;
 
 	i = 0;
-	res = malloc(sizeof(char)*ft_strlen(s1) + 1);
+	x = ft_strlen(s1) + 1;
+	res = malloc(x * sizeof(char));
 	if (!res)
 	{
 		return (NULL);

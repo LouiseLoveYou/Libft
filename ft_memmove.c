@@ -6,7 +6,7 @@
 /*   By: kisella <kisella@student.42lehavre.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 17:28:42 by kisella           #+#    #+#             */
-/*   Updated: 2026/10/25 17:46:31 by kisella          ###   ########.fr       */
+/*   Updated: 2026/10/26 13:18:17 by kisella          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,23 +24,17 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	tmp_src = (const unsigned char *) src;
 	if (tmp_dst > tmp_src)
 	{
-		while (len > 0)
-		{
-			len--;
+		while (len-- > 0)
 			tmp_dst[len] = tmp_src[len];
-		}
 	}
 	else
 	{
 		i = 0;
 		while (i < len)
 		{
-			tmp_dst[i] = tmp_src[i++];
+			tmp_dst[i] = tmp_src[i];
+			i++;
 		}
-		return (dst);
 	}
-}
-
-int	main(void)
-{
+	return (dst);
 }
