@@ -6,18 +6,18 @@
 /*   By: kisella <kisella@student.42lehavre.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:05:33 by kisella           #+#    #+#             */
-/*   Updated: 2026/10/20 15:34:35 by kisella          ###   ########.fr       */
+/*   Updated: 2026/11/02 09:42:58 by kisella          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *s)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
 		i++;
 	}
