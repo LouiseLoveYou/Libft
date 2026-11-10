@@ -6,12 +6,11 @@
 /*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/21 15:41:49 by kisella          #+#    #+#              */
-/*   Updated: 2026/10/25 13:27:25 by kisella         ###   ########.fr        */
+/*   Updated: 2026/11/06 09:58:37 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stddef.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

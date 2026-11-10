@@ -1,18 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: kisella <kisella@student.42lehavre.fr>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/02 17:44:13 by kisella           #+#    #+#             */
-/*   Updated: 2026/11/02 17:53:10 by kisella          ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_striteri.c                                     :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/11/02 17:44:13 by kisella          #+#    #+#              */
+/*   Updated: 2026/11/06 10:00:19 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-#include <stddef.h>
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: kisella <kisella@student.42lehavre.fr>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/02 09:35:06 by kisella           #+#    #+#             */
-/*   Updated: 2026/11/02 16:26:19 by kisella          ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_split.c                                        :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/11/02 09:35:06 by kisella          #+#    #+#              */
+/*   Updated: 2026/11/06 09:56:43 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,19 +36,14 @@ static char	**ft_free(char **strs, int count)
 	return (NULL);
 }
 
-static char	*word_dup(const char *str, int start, int end)
+static char	*word_dup(const char *str, char c)
 {
-	char	*word;
-	int		i;
+	size_t	len;
 
-	word = malloc((end - start + 1) * sizeof(char));
-	if (!word)
-		return (NULL);
-	i = 0;
-	while (start < end)
-		word[i++] = str[start++];
-	word[i] = '\0';
-	return (word);
+	len = 0;
+	while (str[len] && str[len] != c)
+		len++;
+	return (ft_substr(str, 0, len));
 }
 
 char	**ft_split(const char *s, char c)
@@ -56,8 +51,9 @@ char	**ft_split(const char *s, char c)
 	char	**strs;
 	int		i;
 	int		j;
-	int		start;
 
+	if (!s)
+		return (NULL);
 	strs = ft_calloc(count_word(s, c) + 1, sizeof(char *));
 	if (!strs)
 		return (NULL);
@@ -69,12 +65,11 @@ char	**ft_split(const char *s, char c)
 			i++;
 		else
 		{
-			start = i;
-			while (s[i] && s[i] != c)
-				i++;
-			strs[j] = word_dup(s, start, i);
+			strs[j] = word_dup(s + i, c);
 			if (!strs[j++])
 				return (ft_free(strs, j - 1));
+			while (s[i] && s[i] != c)
+				i++;
 		}
 	}
 	return (strs);

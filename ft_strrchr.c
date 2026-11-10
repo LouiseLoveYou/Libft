@@ -6,12 +6,11 @@
 /*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/25 10:24:55 by kisella          #+#    #+#              */
-/*   Updated: 2026/10/25 17:41:49 by kisella         ###   ########.fr        */
+/*   Updated: 2026/11/06 10:00:37 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

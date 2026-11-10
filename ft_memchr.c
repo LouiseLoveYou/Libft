@@ -6,12 +6,11 @@
 /*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/25 12:48:55 by kisella          #+#    #+#              */
-/*   Updated: 2026/10/25 13:16:03 by kisella         ###   ########.fr        */
+/*   Updated: 2026/11/06 09:59:52 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {

@@ -6,12 +6,11 @@
 /*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/23 11:44:48 by kisella          #+#    #+#              */
-/*   Updated: 2026/10/25 13:16:27 by kisella         ###   ########.fr        */
+/*   Updated: 2026/11/06 10:00:27 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

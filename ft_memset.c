@@ -6,12 +6,11 @@
 /*   By: kisella <kisella@student.42lehavre.fr>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/21 12:04:45 by kisella          #+#    #+#              */
-/*   Updated: 2026/10/26 14:19:45 by kisella         ###   ########.fr        */
+/*   Updated: 2026/11/06 10:00:01 by kisella         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memset(void *ptr, int c, size_t n)
 {
