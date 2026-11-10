@@ -1,3 +1,4 @@
+<img width="572" height="35" alt="Screenshot from 2026-11-10 14-39-39" src="https://github.com/user-attachments/assets/814231d8-a055-4d3f-83bb-0d2f61a5f7c8" />
 *This project has been created as part of the 42 curriculum by Kisella.*
 
 # 📚 Libft
